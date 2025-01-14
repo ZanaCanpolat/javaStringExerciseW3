@@ -1,23 +1,22 @@
 package org.Lexicon.group54;
 
-public class Main
-{
-    public static void main(String[] args)
-    {
+public class Main {
+    public static void main(String[] args) {
         //Variable declaration
         String testString;
         int testInt;
-
+        String[] testStringArray;
+        String splitChar;
 
 
         System.out.println("This is some simple java String exercise");
 
         // Checking the length of a Java string
         testString = "Java";
-        System.out.println("The length of the string is: " +testString.length());
+        System.out.println("The length of the string is: " + testString.length());
 
         System.out.println(); // Printing an empty line to increase visibility
-        
+
         //1. Finding out which char is in a certain position
         testString = "Long example sentence";
         System.out.println("Printing teststring = " + testString);
@@ -35,7 +34,7 @@ public class Main
         //3. Creating an sub string and printing out
         testString = "Ok this is not as long!";
         System.out.println("Printing teststring = " + testString);
-        System.out.println("Creating a substring = " + testString.substring(11,22)); // there is several ways of doing this, search for the word you are looking for, keep track of position
+        System.out.println("Creating a substring = " + testString.substring(11, 22)); // there is several ways of doing this, search for the word you are looking for, keep track of position
 
         System.out.println(); // Printing an empty line to increase visibility
 
@@ -69,9 +68,17 @@ public class Main
 
         System.out.println(); // Printing an empty line to increase visibility
 
-        //8. Creating an string array and adding two words from an string
+        //8. Creating an string array and extruding words from an array
+        // Help found at: https://www.w3schools.com/java/ref_string_split.asp there is a problem the copied code does
+        // does not have the same input, ask Elnaz about why?
         testString = "Oil and Water";
-        System.out.println("Creating an string array from an string = " + testString);
+        splitChar = "and";  // this code [,\.\s ´and`] says that split the words by spaces, punctuation + the word "and"
+        testStringArray = testString.split(splitChar);
+        for (String s : testStringArray) {
+            System.out.println("Printing out string array = " + s);
+        }
+
+
 
     }
 }
