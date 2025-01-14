@@ -41,6 +41,7 @@ public class Main
         testString = "CAPS EQUALS SCREAMING!";
         System.out.println("Printing teststring = " + testString);
         System.out.println("testString.indexOf(o) = " + testString.toLowerCase());
+        System.out.println("testString.indexOf(o) = " + testString.toUpperCase());
 
     }
 }
