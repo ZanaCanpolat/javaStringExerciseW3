@@ -14,31 +14,39 @@ public class Main
         testString = "Java";
         System.out.println("The length of the string is: " +testString.length());
 
-        System.out.println(); // Printing an empty line to increase visibity
+        System.out.println(); // Printing an empty line to increase visibility
         
-        //Finding out which char is in a certain position
+        //1. Finding out which char is in a certain position
         testString = "Long example sentence";
         System.out.println("Printing teststring = " + testString);
         System.out.println("testString.charAt(6) = " + testString.charAt(6));
 
         System.out.println(); // Printing an empty line to increase visibility
 
-        //Finding out which char is in a certain position
+        //2. Finding out which char is in a certain position
         testString = "Even longer example sentence";
         System.out.println("Printing teststring = " + testString);
         System.out.println("testString.indexOf(o) = " + testString.indexOf("o"));
 
         System.out.println(); // Printing an empty line to increase visibility
 
-        //Finding out which char is in a certain position
+        //3. Creating an sub string and printing aout
         testString = "Ok this is not as long!";
         System.out.println("Printing teststring = " + testString);
-        System.out.println("testString.indexOf(o) = " + testString.substring(11,22));
+        System.out.println(" = " + testString.substring(11,22));
 
         System.out.println(); // Printing an empty line to increase visibility
 
-        //Finding out which char is in a certain position
+        //4. Converting caps to lowercase and back again
         testString = "CAPS EQUALS SCREAMING!";
+        System.out.println("Printing teststring = " + testString);
+        System.out.println("testString.indexOf(o) = " + testString.toLowerCase());
+        System.out.println("testString.indexOf(o) = " + testString.toUpperCase());
+
+        System.out.println(); // Printing an empty line to increase visibility
+
+        //5. Switching out a word inside a string
+        testString = "Java is the worst programming language!";
         System.out.println("Printing teststring = " + testString);
         System.out.println("testString.indexOf(o) = " + testString.toLowerCase());
         System.out.println("testString.indexOf(o) = " + testString.toUpperCase());
