@@ -35,6 +35,12 @@ public class Main
         System.out.println("Printing teststring = " + testString);
         System.out.println("testString.indexOf(o) = " + testString.substring(11,22));
 
+        System.out.println(); // Printing an empty line to increase visibility
+
+        //Finding out which char is in a certain position
+        testString = "CAPS EQUALS SCREAMING!";
+        System.out.println("Printing teststring = " + testString);
+        System.out.println("testString.indexOf(o) = " + testString.toLowerCase());
 
     }
 }
