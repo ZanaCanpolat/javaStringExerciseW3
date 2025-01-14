@@ -9,6 +9,7 @@ public class Main
         int testInt;
 
 
+
         System.out.println("This is some simple java String exercise");
 
         // Checking the length of a Java string
@@ -54,7 +55,7 @@ public class Main
         System.out.println(); // Printing an empty line to increase visibility
 
         //6. Switching out a word inside a string
-        testString = "\\tJ\\ta\\tv\\ta\\t\"";
+        testString = "\t J \t a \t v \t a \t ";
         System.out.println("Printing test string = " + testString);
         //System.out.println("Changing a word inside a text string = " + testString.replace("worst", "best"));
 
@@ -66,6 +67,11 @@ public class Main
         testString = testInt + testString; //type conversion in string
         System.out.println("Parsing an integer with a string = " + testString);
 
+        System.out.println(); // Printing an empty line to increase visibility
+
+        //8. Creating an string array and adding two words from an string
+        testString = "Oil and Water";
+        System.out.println("Creating an string array from an string = " + testString);
 
     }
 }
