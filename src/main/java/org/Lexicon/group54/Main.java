@@ -7,6 +7,7 @@ public class Main {
         int testInt;
         String[] testStringArray;
         String splitChar;
+        char[] testCharArray = new char[0];
 
 
         System.out.println("This is some simple java String exercise");
@@ -74,7 +75,7 @@ public class Main {
         testString = "Oil and Water";
         splitChar = "and";  // this code [,\.\s ´and`] says that split the words by spaces, punctuation + the word "and"
         testStringArray = testString.split(splitChar);
-        for (String s : testStringArray) {
+        for (String s : testStringArray) { // Ask about this for loop, IntelliJ changed my regular for loop to this (can not remember this)
             System.out.println("Printing out string array = " + s);
         }
 
@@ -88,6 +89,30 @@ public class Main {
             System.out.println("Printing out string array = " + s);
         }
 
+        System.out.println(); // Printing an empty line to increase visibility
+
+        //10. Creating an string array and extruding words from a string that is seperated by comma
+        testString = "ThisShouldBeConverted";
+        testCharArray = testString.toCharArray();
+
+        for (int i = 0; i < testString.length(); i++)
+        {
+            //System.out.println(testString.length()); //debuging
+            //System.out.println("i = " + i); //debuging
+            System.out.println("Char array= "  + testCharArray[i]);
+            //System.out.println("i = " + i); //debugging
+        }
+
+        /*  Fråga Elnaz om varför koden nedan inte fungerade
+        for (int i = 0; i <= testString.length(); i++ )
+        {
+            System.out.println("testString length = " + testString.length()); // for debug
+            System.out.println("i = " + i); // for debug
+            testCharArray[] = testString.toCharArray();
+            System.out.println("Printing out string array = " + testStringArray[i]);
+            System.out.println("i = " + i); // for debug
+        }
+        */
 
     }
 }
