@@ -78,6 +78,15 @@ public class Main {
             System.out.println("Printing out string array = " + s);
         }
 
+        System.out.println(); // Printing an empty line to increase visibility
+
+        //9. Creating an string array and extruding words from a string that is seperated by comma
+        testString = "Carl,Susie,Fredrick,Bob,Erik";
+        splitChar = ",";  // this code [,\.\s ´and`] says that split the words by spaces, punctuation + the word "and"
+        testStringArray = testString.split(splitChar);
+        for (String s : testStringArray) {
+            System.out.println("Printing out string array = " + s);
+        }
 
 
     }
