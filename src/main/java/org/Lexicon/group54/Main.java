@@ -6,6 +6,7 @@ public class Main
     {
         //Variable declaration
         String testString;
+        int testInt;
 
 
         System.out.println("This is some simple java String exercise");
@@ -49,6 +50,22 @@ public class Main
         testString = "Java is the worst programming language!";
         System.out.println("Printing test string = " + testString);
         System.out.println("Changing a word inside a text string = " + testString.replace("worst", "best"));
+
+        System.out.println(); // Printing an empty line to increase visibility
+
+        //6. Switching out a word inside a string
+        testString = "\\tJ\\ta\\tv\\ta\\t\"";
+        System.out.println("Printing test string = " + testString);
+        //System.out.println("Changing a word inside a text string = " + testString.replace("worst", "best"));
+
+        System.out.println(); // Printing an empty line to increase visibility
+
+        //7. Parsing (converting one type to another) an integer in to a string
+        testInt = 20;
+        testString = "20";
+        testString = testInt + testString; //type conversion in string
+        System.out.println("Parsing an integer with a string = " + testString);
+
 
     }
 }
