@@ -1,5 +1,7 @@
 package org.Lexicon.group54;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         //Variable declaration
@@ -91,7 +93,7 @@ public class Main {
 
         System.out.println(); // Printing an empty line to increase visibility
 
-        //10. Creating an string array and extruding words from a string that is seperated by comma
+        //10. Converting a string to array of characters
         testString = "ThisShouldBeConverted";
         testCharArray = testString.toCharArray();
 
@@ -103,7 +105,7 @@ public class Main {
             //System.out.println("i = " + i); //debugging
         }
 
-        /*  Fråga Elnaz om varför koden nedan inte fungerade
+        /*  Ask Elnaz why the code below did not work?????
         for (int i = 0; i <= testString.length(); i++ )
         {
             System.out.println("testString length = " + testString.length()); // for debug
@@ -113,6 +115,16 @@ public class Main {
             System.out.println("i = " + i); // for debug
         }
         */
+
+        System.out.println();
+
+        //11. Converting array of characters to a string
+        testCharArray = new char[]{'J', 'a', 'v', 'a'};
+        testString = new String(testCharArray);  //converted the array of char to String using String constuctor
+        //System.out.println("testCharArray.toString() = " + testCharArray.toString()); //Debug
+        //testString = testCharArray.toString();    //This line gives a alphanumeric value, find out later why?
+        // testString = Arrays.toString(testCharArray);     This line works but gives an output that is not desired, can remove unwanted char with split
+        System.out.println("Converting array of char to string = " + testString);
 
     }
 }
